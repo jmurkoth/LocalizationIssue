@@ -1,8 +1,16 @@
 ﻿@model  AspNet5Localization.Model.Box
-<form asp-controller="Home" asp-action="add" method="post" class="form-inline" role="form">
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
 
-    <label asp-for="Length" />
-    <input type="text" asp-for="Length" class="form-control" placeholder="Length" />
-    <button type="submit" class="btn btn-primary"> Add</button>
-    <span asp-validation-for="Length"></span>
- </form>
+    <form asp-controller="Boxes" asp-action="index" method="post"  role="form">
+
+        <label asp-for="Length" />
+        <input type="text" asp-for="Length" class="form-control" placeholder="Length" />
+        <button type="submit" > Add</button>
+        <span asp-validation-for="Length"></span>
+    </form>
+</body>
+</html>
